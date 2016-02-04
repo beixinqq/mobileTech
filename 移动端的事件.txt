@@ -1,0 +1,35 @@
+移动端常用的事件操作：点击、长按、双击、上滑、下滑、左滑、右滑、拖拽、缩放、旋转...
+一个手指操作的：touch事件模型 touchstart touchmove touchend touchcancel
+多个手指操作的：getsture事件模型 
+ 
+
+按下移动的距离低于10培训，我们默认是没有发生移动的；按下后75ms没有离开，也没有发生位移属于长按；
+
+onclick:
+1)触发太敏感了，碰到就触发了
+2）onclick在移动端有300ms的延迟
+3）当我们点击的时候，按钮的周围会出现默认的颜色背景框
+移动端想实现点击事件，我们需要用touch事件模型来进行模拟
+
+zepto.js中提供了专门的touch事件库：单击、双击、长按、滑动、上滑、下滑、左滑、右滑
+
+touch.js：百度开发的一款事件库  http://touch.code.baidu.com/
+hammer.js：全世界常用的一款事件库
+swipe.js：专门处理滑动的事件库
+fastClick.js:解决onclick的300ms延迟
+--->
+zepto.js-->移动端的小型jQuery:用法和实现跟jQuery类似，但是没有兼容IE浏览器，并且里面只包含了我们 jQuery中常用的方法
+http://www.zeptojs.cn/
+jQuery:选择器、核心、属性、css、文档处理、事件、动画、ajax、常用工具....
+zepto.js和jquery一样，也提供了选择器、核心、属性、css、文档处理、事件、动画、ajax、常用工具，但是比jquery少了很多，所以在使用zepto的时候，我们按照qjuery中常用的使用
+$()是zepto的一个选择器，也是创建zepto这个类的一个实例
+
+
+区别：
+zepto支持css3动画
+zepto增加了移动端专用的touch事件模型
+随笔分类 移动端 http://www.cnblogs.com/aaronjs/category/493583.html
+
+点击的实现:touchstart touchmove touchend
+
+
